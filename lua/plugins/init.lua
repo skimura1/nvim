@@ -20,11 +20,13 @@ vim.pack.add({
     "https://github.com/olexsmir/gopher.nvim",
     "https://github.com/stevearc/oil.nvim",
     "https://github.com/refractalize/oil-git-status.nvim",
+    "https://github.com/MagicDuck/grug-far.nvim"
 })
 
 require("plugins.colorscheme")
 require("plugins.markdown")
 require("plugins.oil")
+require("plugins.grug-far")
 require("plugins.mini")
 require("plugins.treesitter")
 require("plugins.lsp")
