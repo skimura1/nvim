@@ -1,0 +1,12 @@
+--- mini ai (extra a/i text objects) ---
+-- Default setup only: the treesitter-backed specs (@function.outer et al.)
+-- need nvim-treesitter-textobjects queries, which this config doesn't install.
+require("mini.ai").setup()
+-- Adds to the builtin a/i objects:
+-- | `a(` `i(` `a[` `i[` `a{` `i{` | bracket pairs, also via `ab` `aB` |
+-- | `af` `if`                     | function call |
+-- | `aa` `ia`                     | function argument |
+-- | `at` `it`                     | HTML/XML tag |
+-- | `aq` `iq`                     | any quote |
+-- | `a?` `i?`                     | prompt for custom pair |
+-- | `n` / `l` as suffix           | next / previous, e.g. `cinq` |
